@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="author" content="Juan Francisco Galván">
+  <meta name="date" content="05/10/2023">
+  <meta name="description" content="Chronometer">
+  <meta name="keywords" content="chronometer">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Chronometer</title>
+</head>
+<body>
+  <div class="container">
+    <div class="item">
+      <div class="chronometer" id="chronometer">00:00:00</div>
+      <div class="buttons">
+        <button class="button start button-start-pause" id="button-start-pause" aria-label="Start">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <button class="button button-restart" id="button-restart" aria-label="Restart">
+          <i class="bi bi-arrow-counterclockwise"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

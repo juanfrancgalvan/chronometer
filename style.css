@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url('images/background.jpeg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.300);
+  border-radius: 3rem;
+  padding: 2rem;
+}
+
+.chronometer {
+  font-size: 60px;
+  user-select: none;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button-start-pause.start,
+.button-start-pause.start i {
+  background-color: #41319c;
+}
+
+.button-start-pause.pause,
+.button-start-pause.pause i {
+  background-color: #9c8700;
+}
+
+.button-restart {
+  background-color: rgb(138, 33, 33);
+}
+
+@media only screen and (width <= 567px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #chronometer {
+    font-size: 3rem;
+  }
+}
